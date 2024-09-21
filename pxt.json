@@ -1,0 +1,26 @@
+{
+    "name": "pxt-simple-util",
+    "description": "",
+    "dependencies": {
+        "device": "*",
+        "Custom Systemmenu Options": "github:meeeeeeeep1/custom-systemmenu-options#55a5f850d6debf3fa843202a6cd96b5004f8eb23"
+    },
+    "files": [
+        "main.blocks",
+        "main.ts",
+        "README.md",
+        "assets.json",
+        "util.ts"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "targetVersions": {
+        "target": "1.12.56",
+        "targetId": "arcade"
+    },
+    "supportedTargets": [
+        "arcade"
+    ],
+    "preferredEditor": "blocksprj"
+}
