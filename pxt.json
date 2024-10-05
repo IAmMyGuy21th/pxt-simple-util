@@ -3,7 +3,8 @@
     "description": "",
     "dependencies": {
         "device": "*",
-        "controller": "*"
+        "controller": "*",
+        "Vector2": "github:iammyguy21th/pxt-vector2#e0704fd5409faef5ef90fce9a5d902556d11d312"
     },
     "files": [
         "main.blocks",
@@ -11,7 +12,8 @@
         "README.md",
         "assets.json",
         "util.ts",
-        "vectors.ts",
+        "tilemap.g.jres",
+        "tilemap.g.ts",
         "rect.ts"
     ],
     "testFiles": [

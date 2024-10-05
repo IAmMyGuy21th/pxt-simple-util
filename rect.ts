@@ -2,7 +2,7 @@
 //% weight=100 color=#0fbc11 icon=""
 namespace easyTileRect {
 
-    //% block="Create Tilemap Rectangle start (Vector2): $start end (Vector2): $end topLeft-topRight-bottomLeft-bottomRight: $topLeft $topRight $bottomLeft $bottomRight top-bottom-left-right: $top $bottom $left $right fill: $fill"
+    //% block="Create Tilemap Rectangle start (Vector2): $start end (Vector2): $end topLeft-topRight-bottomLeft-bottomRight: $topLeft $topRight $bottomLeft $bottomRight top-bottom-left-right: $top $bottom $left $right fill: $fill wall: $wall"
     //% bottomRight.shadow=tileset_tile_picker
     //% bottomRight.decompileIndirectFixedInstances=true
     //% bottomLeft.shadow=tileset_tile_picker
@@ -21,7 +21,7 @@ namespace easyTileRect {
     //% right.decompileIndirectFixedInstances=true
     //% fill.shadow=tileset_tile_picker
     //% fill.decompileIndirectFixedInstances=true
-    export function createRect(start: vectors.Vector2, end: vectors.Vector2, topLeft: Image, topRight: Image, bottomLeft: Image, bottomRight: Image, top: Image, bottom: Image, left: Image, right: Image, fill: Image) {
+    export function createRect(start: vectors.Vector2, end: vectors.Vector2, topLeft: Image, topRight: Image, bottomLeft: Image, bottomRight: Image, top: Image, bottom: Image, left: Image, right: Image, fill: Image, wall: boolean) {
         let size = (end.subtract(start)).clone()
         let width = size.x
         let height = size.y
@@ -33,6 +33,7 @@ namespace easyTileRect {
                     py = y + start.y
                     p = new vectors.Vector2(px, py)
                     tiles.setTileAt(vectors.vectorAsTilepos(p), fill)
+                    tiles.setWallAt(vectors.vectorAsTilepos(p), wall)
                 }
             }
             for (let x = 0; x <= width; x++) {
