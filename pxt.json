@@ -3,7 +3,8 @@
     "description": "",
     "dependencies": {
         "device": "*",
-        "Custom Systemmenu Options": "github:meeeeeeeep1/custom-systemmenu-options#55a5f850d6debf3fa843202a6cd96b5004f8eb23"
+        "Vector2": "github:iammyguy21th/pxt-vector2#e0704fd5409faef5ef90fce9a5d902556d11d312",
+        "pxt-rect-plat-gen": "github:iammyguy21th/pxt-rect-plat-gen#ed4890e1f4343d0dd8c3db7324e6986f29e41f78"
     },
     "files": [
         "main.blocks",
@@ -22,5 +23,5 @@
     "supportedTargets": [
         "arcade"
     ],
-    "preferredEditor": "blocksprj"
+    "preferredEditor": "tsprj"
 }
