@@ -47,4 +47,10 @@ namespace util {
         }
         return (first ? positions[0] : positions)
     }
+
+    //% block="$tilepos as vector2"
+    export function tileposAsVector(tilepos: tiles.Location) {
+        let vectorTilepos = new vectors.Vector2(tilepos.column, tilepos.row)
+        return vectorTilepos
+    }
 }
