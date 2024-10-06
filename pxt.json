@@ -4,7 +4,8 @@
     "dependencies": {
         "device": "*",
         "controller": "*",
-        "Vector2": "github:iammyguy21th/pxt-vector2#e0704fd5409faef5ef90fce9a5d902556d11d312"
+        "tilemaps": "github:microsoft/pxt-tilemaps#v1.12.0",
+        "pxt-rect-plat-gen": "github:iammyguy21th/pxt-rect-plat-gen#8cb9538672a29021f60059c1a82b0cbd19e2091a"
     },
     "files": [
         "main.blocks",
@@ -13,8 +14,7 @@
         "assets.json",
         "util.ts",
         "tilemap.g.jres",
-        "tilemap.g.ts",
-        "rect.ts"
+        "tilemap.g.ts"
     ],
     "testFiles": [
         "test.ts"
@@ -26,5 +26,5 @@
     "supportedTargets": [
         "arcade"
     ],
-    "preferredEditor": "tsprj"
+    "preferredEditor": "blocksprj"
 }
