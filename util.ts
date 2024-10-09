@@ -30,10 +30,10 @@ namespace util {
     }
 
 
-    //% block="All instances of tile: $tile return first instance?: $first"
+    //% block="All instances of tile: $tile"
     //% tile.shadow=tileset_tile_picker
     //% tile.decompileIndirectFixedInstances=true
-    export function instancesOfTile(tile: Image, first: boolean) {
+    export function instancesOfTile(tile: Image) {
         let positions = []
         let pos = vectors.vectorZero().clone()
         for (let x = 0; x < tiles.tilemapColumns(); x++) {
@@ -45,7 +45,7 @@ namespace util {
                 }
             }
         }
-        return (first ? positions[0] : positions)
+        return positions
     }
 
     //% block="$tilepos as vector2"
